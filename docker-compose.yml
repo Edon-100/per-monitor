@@ -22,5 +22,5 @@ services:
       - 80:80
       - 443:443
     volumes:
-      - /home/nginx/conf.d:/etc/nginx/conf.d
-      - /home/webserver/static/jenkins/dist/dist:/usr/share/nginx/html
+      - /home/nginx/conf.d/:/etc/nginx/conf.d
+      - /home/webserver/static/:/usr/share/nginx/html
