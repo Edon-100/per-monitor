@@ -23,4 +23,4 @@ services:
       - 443:443
     volumes:
       - /home/nginx/conf.d/:/etc/nginx/conf.d
-      - /home/webserver/static/:/usr/share/nginx/html
+      - /home/webserver/static/nginx/html/:/usr/share/nginx/html
