@@ -1,8 +1,7 @@
 function App() {
   return (
     <div className="App">
-      <h1>Per Mon!it!!o!r?.!!!</h1>
-      <h1>FUCK</h1>
+      <h1>Per Monitor</h1>
     </div>
   );
 }
