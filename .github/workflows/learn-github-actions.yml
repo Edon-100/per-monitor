@@ -12,6 +12,7 @@ jobs:
           node-version: '14'
       - run: npm install -g bats
       - run: bats -v
+      - run: ls
   build-static-page:
     runs-on: ubuntu-latest
     steps:
@@ -22,3 +23,4 @@ jobs:
       - run: npm install
       - run: npm run build
       - run: ls
+      - run: cat package.json
