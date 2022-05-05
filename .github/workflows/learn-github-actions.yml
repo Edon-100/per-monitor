@@ -10,8 +10,9 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '14'
+      - run: touch 11111111.js          
       - run: npm install -g bats
-      - run: npm install axios
+      - run: npm install dayjs
       - run: bats -v
       - run: ls
       - run: cat package.json
@@ -22,7 +23,9 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '14'
+      - run: touch 222222.js
       - run: npm install
       - run: npm run build
       - run: ls
+      - run: bats -v
       - run: cat package.json
